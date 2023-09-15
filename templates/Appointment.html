@@ -80,11 +80,30 @@
                     <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Your Address"></textarea>
                 </div>
                 <div class="mb-4">
-                    <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold font-BalooBhai2  py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    <button id="ApptConfirm" type="button" class="bg-teal-500 hover:bg-teal-700  text-white font-bold font-BalooBhai2  py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                         Submit
                     </button>
                 </div>
             </form>
         </div>
     </div>
+    <!--Footer-->
+    <div  class="flex flex-col text-teal-500 bg-teal-900 p-16 text-sm py-6 mx-auto mt-20 h-max items-center justify-center font-sans" id="footer">
+        ©BYTE SCRAPPERS All rights reserved 2023
+    </div>
 </body>
+
+<script src="script.js"></script>
+
+<script>
+    // Get a reference to the button element
+    var redirectButton = document.getElementById("ApptConfirm");
+  
+    // Add a click event listener to the button
+    redirectButton.addEventListener("click", function() {
+      // Redirect to the new HTML file
+      window.location.href = "End.html";
+    });
+  </script>
+
+</html>
