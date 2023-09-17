@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Booking</title>
-    <!-- Include Tailwind CSS from a CDN -->
     <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -13,6 +12,7 @@
         <div class="bg-teal-50 shadow-md rounded px-10 pt-6 pb-8 mb-4">
             <h2 class="text-3xl text-teal-700 font-bold mb-6">Appointment Scheduling</h2>
             <form action="#" method="POST">
+                <!--personal details go here-->
                 <div class="flex justify-evenly">
                     <div class="mb-4">
                         <label class="block text-teal-700 text-lg font-bold mb-2" for="name">
@@ -62,22 +62,23 @@
                     </div>
                     <div class="mb-4">
                         <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
-                            Weight
+                            Blood Group
                         </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Weight">
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Blood Group">
                     </div>
                     
                     <div class="mb-4">
                         <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
-                            Weight
+                            Alternate Ph
                         </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Weight">
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Alternate Ph">
                     </div>
                 </div>
+                <!--Symptoms go here-->
                 <div class="flex justify-evenly font-semibold  text-teal-700 ">
-                    <div class="mb-4 ">
+                    <div class="mb-4">
                         <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
-                            Types of Pain
+                            Pain Experienced
                         </label>
                         <select name="fruits" multiple="multiple" class="block appearance-none hover:scale-105  w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                             <option value=" chest_pain">Chest Pain</option>
@@ -94,9 +95,9 @@
                             Eye Problems
                         </label>
                         <select name="fruits" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option value="Blurred & distorted vision">Blurred vision</option>
-                            <option value="Redness of Eye">Redness of Eye</option>
-                            <option value="Yellowing of Eye">Yellowing of Eye</option>
+                            <option value=" blurred_and_distorted_vision">Blurred Vision</option>
+                            <option value=" redness_of_eyes">Redness of Eye</option>
+                            <option value=" yellowing_of_eyes">Yellowing of Eye</option>
                         </select>
                     </div>
                     <div class="mb-4">
@@ -104,10 +105,10 @@
                             Loss of
                         </label>
                         <select name="fruits" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option value="Apetite">Apetite</option>
-                            <option value="Balance">Balance</option>
-                            <option value="Smell">Smell</option>
-                            <option value="Strength">Strength in limbs</option>
+                            <option value=" loss_of_apetite">Apetite</option>
+                            <option value=" balance">Balance</option>
+                            <option value=" smell">Smell</option>
+                            <option value=" weakness_in_limbs">Strength in limbs</option>
                         </select>
                     </div>
                 </div>
@@ -117,12 +118,12 @@
                             Other 1
                         </label>
                         <select name="fruits" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option value="Vomitting">Vomitting</option>
-                            <option value="Chills/Shivering">Chills/Shivering</option>
-                            <option value="Cough">Cough</option>
-                            <option value="Fatigue">Fatigue</option>
-                            <option value="High fever">High fever</option>
-                            <option value="Nausea">Nausea</option>
+                            <option value=" vomiting">Vomiting</option>
+                            <option value=" shivering">Chills/Shivering</option>
+                            <option value=" cough">Cough</option>
+                            <option value=" fatigue">Fatigue</option>
+                            <option value=" high_fever">High fever</option>
+                            <option value=" nausea">Nausea</option>
                         </select>
                     </div>
                     <div class="mb-4">
@@ -130,12 +131,12 @@
                             Other 2
                         </label>
                         <select name="fruits" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option value="Acidity">Acidity</option>
-                            <option value="Diarrhea">Diarrhea</option>
-                            <option value="Itching">Itching</option>
-                            <option value="Dizziness">Dizziness</option>
-                            <option value="Breathlessness">Breathlessness</option>
-                            <option value="Painful walking">Painful walking</option>
+                            <option value=" acidity">Acidity</option>
+                            <option value=" diarrhoea">Diarrhoea</option>
+                            <option value=" itching">Itching</option>
+                            <option value=" dizziness">Dizziness</option>
+                            <option value=" breathlessness">Breathlessness</option>
+                            <option value=" painful_walking">Painful walking</option>
                         </select>
                     </div>
                     <div class="mb-4">
@@ -143,20 +144,20 @@
                             Other 3
                         </label>
                         <select name="fruits" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500  px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option value="Stiff neck">Stiff neck</option>
-                            <option value="Fast heart rate">Fast heart rate</option>
-                            <option value="Lethargy">Lethargy</option>
-                            <option value="Irregular sugar level">Irregular sugar level</option>
+                            <option value=" stiff_neck">Stiff neck</option>
+                            <option value=" fast_heart_rate">Fast heart rate</option>
+                            <option value=" lethargy">Lethargy</option>
+                            <option value=" irregular_sugar_level">Irregular sugar level</option>
                         </select>
                     </div>
                 </div>
-                <div class="mb-4">
+                <!-- <div class="mb-4">
                     <label class="block text-teal-700 text-lg font-bold mb-2" for="message">
                         Address
                     </label>
                     <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Your Address"></textarea>
-                </div>
-                <div class="mb-4">
+                </div> -->
+                <div class="mb-4 flex justify-center p-6">
                     <button id="ApptConfirm" type="button" class="bg-teal-500 hover:bg-teal-700  text-teal-100 font-bold font-BalooBhai2  py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                         Submit
                     </button>
