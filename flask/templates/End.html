@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation</title>
+    <link rel="stylesheet" href="./../static/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body class="bg-teal-50">
+    <h1 class="text-teal-700 p-6 text-5xl font-bold flex justify-center">Appointment Details</h1>
+    <div class="container px-10 py-6 bg-gradient-to-b from-teal-50 to-teal-300 ... mx-auto  h-max">
+        <h2 class="text-4xl text-teal-700 p-4 font-bold">Personal Information</h2>
+        <form action="#" method="GET">
+            <div class="p-4 text-xl">
+                <div class="mb-4 ">
+                    <span class=" text-teal-700 font-semibold">Name : </span>
+                    <span class="text-black font-semibold">{{name}}</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Age : </span>
+                    <span class="text-black font-semibold">{{age}}</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Phone No. : </span>
+                    <span class="text-black font-semibold">{{phone_no}}</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">BMI : </span>
+                    <span class="text-black font-semibold">{{bmi}}</span>
+                </div>
+            </div>
+        </form>
+        <h2 class="text-4xl text-teal-700 p-4 font-bold">Doctors's Information</h2>
+        <form action="#" method="GET">
+            <div class="p-4 text-xl">
+                <div class="mb-4 ">
+                    <span class=" text-teal-700 font-semibold"> Doctor's Name : </span>
+                    <span class="text-black font-semibold">Dr. Siddhartho Banerjee</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Department : </span>
+                    <span class="text-black font-semibold">{{doctor}}</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Qualification and Years of Experience : </span>
+                    <span class="text-black font-semibold">MD, 12+ Years</span>
+                </div>
+            </div>
+        </form>
+        <h2 class="text-4xl text-teal-700 p-4 font-bold">Booking Details</h2>
+        <form action="#" method="GET">
+            <div class="p-4 text-xl">
+                <div class="mb-4 ">
+                    <span class=" text-teal-700 font-semibold"> Date : </span>
+                    <span class="text-black font-semibold">22/09/2023</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Time : </span>
+                    <span class="text-black font-semibold">10am</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Room : </span>
+                    <span class="text-black font-semibold">512</span>
+                </div>
+                <div class="mb-4">
+                    <span class=" text-teal-700 font-semibold">Building : </span>
+                    <span class="text-black font-semibold">Central Block</span>
+                </div>
+            </div>
+        </form>
+        <div class="mb-4 text-teal-700 font-bold text-2xl p-4">
+            <p>Contact us for more information</p>
+            <div class="text-lg font-normal p-1">
+                <p class="font-semibold">Contact No:</p>
+                <p>+91 9503783333 </p>
+                <p>+91 9876543210</p>
+                <p class="font-semibold">Email: </p>
+                <p>anybody@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div  class="flex flex-col text-teal-500 bg-teal-900 text-sm py-6 mx-auto h-max items-center justify-center font-sans" id="footer">
+        ©BYTE SCRAPERS All rights reserved 2023
+        {{gender}}
+        {{email}}
+        {{height}}
+        {{weight}}
+        {{blood}}
+        {{aph}}
+       
+    
+    </div>
+</body>
+</html>

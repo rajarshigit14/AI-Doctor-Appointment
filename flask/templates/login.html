@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/output.css">
+    
+    <title>Login</title>
+</head>
+<body class="flex h-screen items-center justify-center bg-gradient-to-b from-teal-50 to-teal-400 ...">
+   
+
+    <div class="right flex flex-col bg-white rounded-lg p-8 w-1/4 border-2 border-black-600">
+       
+        <h1 class="text-teal-500 font-bold text-2xl flex justify-center p-4">Hi, there!</h1>
+        <form action="/submit">
+        <input class="px-4 h-12 my-2 border border-1 outline-blue-600  border-gray-200 rounded-lg"  type="text" placeholder="Email address" name="email">
+        <input class="px-4 h-12 my-2 border border-1 outline-blue-600  border-gray-200 rounded-lg" type="password" placeholder="Password" name="passcode">
+        <button class="btn hover:bg-teal-700 bg-teal-500 my-2 py-3 text-white font-bold rounded-md" type="submit">Log In</button>
+        <!-- <span class="text-center text-teal-600 my-2 text-sm cursor-pointer hover:underline">Forgotten password?</span> -->
+        <hr class="my-2">
+        <button class="btn hover:bg-teal-700 bg-teal-500 my-2 py-3 text-white font-bold rounded-md w-fit mx-auto px-4 " 
+        type="submit">Sign up</button>
+        </form>
+
+       
+    </div>
+
+</body>
+</html>

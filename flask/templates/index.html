@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <title>Home</title>
+</head>
+<body class="bg-teal-50">
+    <nav class="bg-teal-500 py-6 px-4 flex">
+        <!-- <img src="/img/logo3.jpeg" alt="logo" width="100"> -->
+        <ul class=" text-white text-lg flex space-x-6 font-sans ml-4">
+            <li class="hover:font-semibold hover:cursor-pointer"><a href="#">Home</a></li>
+            
+            <li class="hover:font-semibold hover:cursor-pointer">Hospitals</li>
+            <li class="hover:font-semibold hover:cursor-pointer"><a href="#about">About</a></li>
+            <li class="hover:font-semibold hover:cursor-pointer"><a href="#contact">Contact</a></li>
+        </ul>
+        <form action="/appointment">
+            <button id="ApptBook"    type="submit" class="btn text-white bg-teal-700 hover:bg-white hover:text-teal-900 border-none border-teal-700 rounded-md px-10 py-4">Appointment Scheduling</button>
+            </form>
+    </nav>
+
+    <!--Hero Section-->
+
+    <div class="container flex px-10 py-24 bg-gradient-to-b from-teal-50 to-teal-300 ... mx-auto mt-12 h-max text-teal-700  border-teal-900">
+        <div class="mx-10">
+            <div class="flex justify-evenly items-center py-10">
+                <p class="font-sans font-bold text-5xl mx-10 px-10 py-6 text-gradient">Empowering and Elevating Your Healthcare Experience: AI-Driven Doctor Appointments</p>
+                <img class="py-6" src="{{url_for('static', filename='doctors1.jpg')}}" alt="logo" width="350">
+            </div>
+            <div class="flex justify-start px-10 py-4 mx-10">
+                <form action="/appointment">
+                <button id="ApptBook"    type="submit" class="btn text-white bg-teal-700 hover:bg-white hover:text-teal-900 border-none border-teal-700 rounded-md px-10 py-4">Book an Appointment Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--About Us-->
+
+    <div class="flex flex-col text-teal-700 bg-gradient-to-b from-teal-50 to-teal-300 ... bg-teal-500 container px-10 py-24 mx-auto mt-20 h-max items-center justify-center font-sans rounded-md " id="about">
+        <div class="flex flex-col items-center">
+            <h1 class="text-4xl font-bold py-6">About Us</h1>
+            <p class="text-xl py-6">Welcome to our AI-powered Doctor Appointment Website! We are passionate about revolutionizing healthcare accessibility and convenience for everyone. Our platform harnesses the cutting-edge capabilities of artificial intelligence to make the process of booking medical appointments easier and more efficient than ever before.</p>
+
+                <p class="text-xl py-6">At the heart of our platform is a commitment to putting your health and well-being first. Whether you're seeking routine check-ups, specialized consultations, or urgent care, we're here to streamline the entire appointment scheduling experience. Our AI-driven system intelligently matches your medical needs with the right healthcare providers, ensuring you receive the care you deserve promptly.
+                </p>
+
+                <p class="text-xl py-6">We understand that your time is valuable, which is why we prioritize simplicity and convenience. With just a few clicks, you will be alloted doctors' based on your urgency . No more waiting on hold or navigating complicated scheduling systems. We've made it effortless to take control of your health.</p>
+        </div>
+    </div>
+
+    <!--Contact Us-->
+    
+    <div class="bg-gradient-to-b from-teal-50 to-teal-300 ... text-teal-700 flex flex-col p-16 text-lg container px-10 py-24 mx-auto mt-20 h-max items-center justify-center font-sans rounded-md" id="contact">
+            <h2 class="text-4xl font-bold py-8 mb-8">Feel Free to Contact Us</h2>
+            <div class="flex justify-evenly text-2xl">
+                <div class="flex flex-col mx-10">
+                    <p class="font-semibold">Contact No:</p>
+                    <p>+91 9503783333 </p>
+                    <p>+91 9876543210</p>
+                </div>
+                <div class="flex flex-col mx-10">
+                    <p class="font-semibold">Email: </p>
+                    <p>anybody@gmail.com</p>
+                </div>
+                <div class="flex flex-col mx-10">
+                    <p class="font-semibold">Socials: </p>
+                    <a href="https://www.facebook.com" class="fab fa-facebook p-2"> DoctorG</a>
+                    <a href="https://www.linkedin.com" class="fab fa-linkedin p-2"> DoctorG</a>
+                </div>
+            </div>
+            <!-- Helpline no-->
+
+            <!--Mail id-->
+
+            <!--Social Media-->
+
+    </div>
+
+    <!--Footer-->
+    <div  class="flex flex-col text-teal-500 bg-teal-900 text-sm py-6 mx-auto h-max items-center justify-center font-sans" id="footer">
+        ©BYTE SCRAPERS All rights reserved 2023
+    </div>
+
+</body>
+
+<script>
+    // Get a reference to the button element
+    var redirectButton = document.getElementById("ApptBook");
+  
+    // Add a click event listener to the button
+    redirectButton.addEventListener("click", function() {
+      // Redirect to the new HTML file
+      window.location.href = "Appointment.html";
+    });
+  </script>
+
+</html>

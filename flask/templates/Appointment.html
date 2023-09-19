@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="./../static/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body class="bg-teal-100 bg-gradient-to-b from-teal-100 to-teal-500 ...">
+    <div class="container mx-auto mt-8 p-4">
+        <div class="bg-teal-50 shadow-md rounded px-10 pt-6 pb-8 mb-4">
+            <h2 class="text-3xl text-teal-700 font-bold mb-6">Appointment Scheduling</h2>
+            <form action="/submit2" method="POST">
+                <!--personal details go here-->
+                <div class="flex justify-evenly">
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" name="paitent_name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="name">
+                            Age
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Age" name="Age">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="name">
+                            Phone No.
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Phone No." name="Ph">
+                    </div>
+                </div>
+                <div class="flex justify-evenly">
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="name">
+                            Gender
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Gender" name="gender">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Height
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Your Height(in cm)" name="Height">
+                    </div>
+                </div>
+                <div class="flex justify-evenly">
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Weight
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Your Weight (in kg)" name="Weight">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Blood Group
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Your Blood Group" name="blood">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Alternate Ph
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Alternate Ph" name="aph">
+                    </div>
+                </div>
+                <!--Symptoms go here-->
+                <div class="flex justify-evenly font-semibold  text-teal-700 ">
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Pain Experienced
+                        </label>
+                        <select name="multiselect1" multiple="multiple" class="block appearance-none hover:scale-105  w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value=" chest_pain">Chest Pain</option>
+                            <option value=" abdominal_pain">Abdominal Pain</option>
+                            <option value=" back_pain">Back Pain</option>
+                            <option value=" muscle_pain">Muscle Pain</option>
+                            <option value=" joint_pain">Joint Pain</option>
+                            <option value=" belly_pain">Belly Pain</option>
+                            <option value=" headache">Headache</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Eye Problems
+                        </label>
+                        <select name="multiselect2" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value=" blurred_and_distorted_vision">Blurred Vision</option>
+                            <option value=" redness_of_eyes">Redness of Eye</option>
+                            <option value=" yellowing_of_eyes">Yellowing of Eye</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Loss of
+                        </label>
+                        <select name="multiselect3" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value=" loss_of_apetite">Apetite</option>
+                            <option value=" loss_of_balance">Balance</option>
+                            <option value=" loss_of_smell">Smell</option>
+                            <option value=" weakness_in_limbs">weakness</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex justify-evenly font-semibold  text-teal-700 ">
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Other 1
+                        </label>
+                        <select name="multiselect4" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value=" vomiting">Vomiting</option>
+                            <option value=" shivering">Chills/Shivering</option>
+                            <option value=" cough">Cough</option>
+                            <option value=" fatigue">Fatigue</option>
+                            <option value=" high_fever">High fever</option>
+                            <option value=" nausea">Nausea</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Other 2
+                        </label>
+                        <select name="multiselect5" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value=" acidity">Acidity</option>
+                            <option value=" diarrhoea">Diarrhoea</option>
+                            <option value=" itching">Itching</option>
+                            <option value=" dizziness">Dizziness</option>
+                            <option value=" breathlessness">Breathlessness</option>
+                            <option value=" painful_walking">Painful walking</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-teal-700 text-lg font-bold mb-2" for="email">
+                            Other 3
+                        </label>
+                        <select name="multiselect6" multiple="multiple" class="block appearance-none hover:scale-105 w-full bg-teal-50 border-2 border-teal-500  px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value=" stiff_neck">Stiff neck</option>
+                            <option value=" fast_heart_rate">Fast heart rate</option>
+                            <option value=" lethargy">Lethargy</option>
+                            <option value=" irregular_sugar_level">Irregular sugar level</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <div class="mb-4">
+                    <label class="block text-teal-700 text-lg font-bold mb-2" for="message">
+                        Address
+                    </label>
+                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-teal-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Your Address"></textarea>
+                </div> -->
+                <div class="mb-4 flex justify-center p-6">
+                    <button id="ApptConfirm" type="submit" class="bg-teal-500 hover:bg-teal-700  text-teal-100 font-bold font-BalooBhai2  py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <div  class="flex flex-col text-teal-500 bg-teal-900 p-16 text-sm py-6 mx-auto mt-20 h-max items-center justify-center font-sans" id="footer">
+        ©BYTE SCRAPERS All rights reserved 2023
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+<script>
+    // Get a reference to the button element
+    var redirectButton = document.getElementById("ApptConfirm");
+  
+    // Add a click event listener to the button
+    redirectButton.addEventListener("click", function() {
+      // Redirect to the new HTML file
+      window.location.href = "End.html";
+    });
+  </script>
+
+</html>
