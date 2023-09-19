@@ -9,15 +9,16 @@
     <title>Home</title>
 </head>
 <body class="bg-teal-50">
-    <nav class="bg-teal-500 py-6 px-4 flex">
+    <nav class="bg-teal-500 py-4 px-4 flex">
         <!-- <img src="/img/logo3.jpeg" alt="logo" width="100"> -->
-        <ul class=" text-white text-lg flex space-x-6 font-sans ml-4">
+        <ul class=" text-white text-xl flex space-x-6 font-sans ml-4 py-4">
             <li class="hover:font-semibold hover:cursor-pointer"><a href="#">Home</a></li>
-            <li class="hover:font-semibold hover:cursor-pointer"><a href="/templates/Appointment.html">Appointment Scheduling</a></li>
+            <!-- <li class="hover:font-semibold hover:cursor-pointer"><a href="/templates/Appointment.html">Appointment Scheduling</a></li> -->
             <li class="hover:font-semibold hover:cursor-pointer">Hospitals</li>
             <li class="hover:font-semibold hover:cursor-pointer"><a href="#about">About</a></li>
             <li class="hover:font-semibold hover:cursor-pointer"><a href="#contact">Contact</a></li>
         </ul>
+        <button id="ApptBook" type="button" class="btn text-white bg-teal-700 hover:bg-white hover:text-teal-900 border-none border-teal-700 rounded-xl px-4 py-4 ml-40">Appointment Scheduling</button>
     </nav>
 
     <!--Hero Section-->
@@ -29,7 +30,7 @@
                 <img class="py-6" src="/img/doctors1.jpg" alt="logo" width="350">
             </div>
             <div class="flex justify-start px-10 py-4 mx-10">
-                <button id="ApptBook" type="button" class="btn text-white bg-teal-700 hover:bg-white hover:text-teal-900 border-none border-teal-700 rounded-md px-10 py-4">Book an Appointment Now</button>
+                <button id="ApptBook1" type="button" class="btn text-white bg-teal-700 hover:bg-white hover:text-teal-900 border-none border-teal-700 rounded-md px-10 py-4">Book an Appointment Now</button>
             </div>
         </div>
     </div>
@@ -92,6 +93,14 @@
       // Redirect to the new HTML file
       window.location.href = "Appointment.html";
     });
+
+    var redirectButton = document.getElementById("ApptBook1");
+  
+  // Add a click event listener to the button
+  redirectButton.addEventListener("click", function() {
+    // Redirect to the new HTML file
+    window.location.href = "Appointment.html";
+  });
   </script>
 
 </html>
